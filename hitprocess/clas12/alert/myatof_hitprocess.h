@@ -45,6 +45,7 @@ public:
 	virtual map< int, vector <double> > chargeTime(MHit*, int);
 	
 	// - voltage: returns a voltage value for a given time. The input are charge value, time
+	// Used for pulse shape
 	virtual double voltage(double, double, double);
 	
 	// The pure virtual method processID returns a (new) identifier
