@@ -332,7 +332,8 @@ map< int, vector <double> > myatof_HitProcess::chargeTime(MHit* aHit, int hitn) 
 // time (coming from timeAtElectronics)
 
 double myatof_HitProcess::voltage(double charge, double time, double forTime) {
-	return 0.0;
+	//return 0.0;
+	return PulseShape(forTime, atc.vpar, charge, time);
 }
 
 void myatof_HitProcess::initWithRunNumber(int runno)
